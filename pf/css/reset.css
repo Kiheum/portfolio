@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* font start */
+@font-face {
+	font-family:'font';
+	font-style:normal;
+	font-weight:400;
+	src:url('../font/font.eot');
+	src:url('../font/font.eot?#iefix') format('embedded-opentype'),
+		url('../font/font.woff') format('woff');
+}
+/* //font end */
+
+/* CSS reset start */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, hr, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, span, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;font-style:normal;font-variant:normal;font-weight:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;line-height:100%}
+input, select{margin:0;padding:0;font-style:normal;font-variant:normal;font-weight:inherit;font-size:inherit;font-family:inherit}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block}
+li{list-style:none}
+blockquote, q{quotes:'"' '"'}
+blockquote:before, blockquote:after, q:before, q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+address{font-style:normal}
+input, select, button, img{vertical-align:middle}
+button{display:block;margin:0;padding:0;border:0;background-color:transparent;font:inherit;color:inherit;cursor:pointer;outline:none}
+a{font-size:inherit;color:inherit;text-decoration:none}
+strong, em{font-size:inherit;line-height:inherit}
+/* //CSS reset end */
+
+/* common classes start */
+body{font-family:'font';font-weight:400;color:#000;-webkit-text-size-adjust:none}
+#wrapper{overflow:hidden;position:relative;width:100%}
+.clear:after{display:block;clear:both;content:""}
+.indent{display:block;height:0;font-size:0;text-indent:-10000px}
+
+.cm_input_box{overflow:hidden;position:relative;height:35px}
+.cm_input_box input[type="text"], .cm_input_box input[type="password"], .cm_input_box input[type="number"]{width:100%;height:100%;border:1px solid #ddd;outline:none;-webkit-border-radius:0;border-radius:0;-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-box-sizing:border-box;box-sizing:border-box;resize:none}
+.cm_input_box input[type="number"]{appearance:none;margin:0}
+.cm_input_box input[type="number"]::-ms-clear{display:none}
+.cm_input_box input[type="number"]::-webkit-outer-spin-button, .cm_input_box input[type="number"]::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.cm_input_box input[type="text"], .cm_input_box input[type="password"], .cm_input_box input[type="number"]{padding:9px 10px 10px;color:#000;font-family:'NanumGothic';font-size:14px;height:100%;line-height:100%;letter-spacing:-0.05em}
+.cm_input_box input[type="text"].readonly{background-color:#eee}
+
+.cm_select_box{position:relative;height:35px;border:1px solid #ddd;background-color:#fff;background-image:url("../img/common/cso_select_arrow.png");background-repeat:no-repeat;background-position:100% 50%;-webkit-box-sizing:border-box;box-sizing:border-box}
+.cm_select_box select{-webkit-appearance:none;appearance:none;padding:10px 10px 9px;background-color:transparent;background-image:none;box-shadow:0;border:0;color:#000;font-family:'NanumGothic';font-size:14px;line-height:100%;letter-spacing:-0.05em;opacity:0;filter:alpha(opacity=0);outline:none;-webkit-box-sizing:border-box;box-sizing:border-box;zoom:1;z-index:10}
+.cm_select_box select > option{font-family:inherit;font-size:inherit;letter-spacing:inherit}
+.cm_select_box label{display:block;position:absolute;top:9px;left:10px;color:#000;font-family:'NanumGothic';font-size:14px;line-height:100%;letter-spacing:-0.05em;z-index:5}
+
+.cm_txt_area{position:relative;height:35px}
+.cm_txt_area textarea{width:100%;max-height:150px;-webkit-appearance:none;appearance:none;padding:10px;box-shadow:0;border:1px solid #ddd;color:#000;font-family:'NanumGothic';font-size:14px;line-height:130%;letter-spacing:-0.05em;opacity:0;filter:alpha(opacity=0);outline:none;-webkit-box-sizing:border-box;box-sizing:border-box;zoom:1;resize:none;box-shadow:0}
+
+.cm_file_wrap{font-size:0}
+.cm_file_wrap .cm_input_box{display:inline-block;vertical-align:middle;width:90px}
+.cm_file_wrap .btns_input_file{display:inline-block;width:90px;height:35px;margin-left:10px;position:relative;vertical-align:middle;background-color:#6190d6;-webkit-box-sizing:border-box;-webkit-box-sizing:border-box}
+.cm_file_wrap .btns_input_file button[type="button"]{background-color:transparent;color:#fff;display:block;font-size:14px;font-family:'NanumGothic';font-weight:700;letter-spacing:-0.05em;position:relative;width:100%;height:100%}
+.cm_file_wrap .btns_input_file input[type="file"]{filter:alpha(opacity=0);height:100%;left:0;opacity:0;position:absolute;top:0;width:100%}
+
+.cm_chk_wrap .cm_chk_box{display:inline-block;vertical-align:middle;margin:0 15px 10px 0}
+.cm_chk_box{display:inline-block;vertical-align:middle;background-image:url("../img/common/checkbox_ico.png");background-position:0 0;background-repeat:no-repeat;font-size:0;position:relative}
+.cm_chk_box.disabled{background-image:url("../img/common/checkbox_disabled.jpg")}
+.cm_chk_box.on{background-position:0 -24px}
+.cm_chk_box input[type="checkbox"]{display:inline-block;height:24px;opacity:0;position:relative;filter: alpha(opacity=0);vertical-align:middle;width:24px;z-index:10}
+.cm_chk_box label{color:#000;display:inline-block;font-family:'NanumGothic';font-size:14px;letter-spacing:-0.05em;margin-left:10px;vertical-align:middle}
+
+.cm_radio_wrap{font-size:0}
+.cm_radio_wrap .cm_radio_box{display:inline-block;vertical-align:middle}
+.cm_radio_box{position:relative;background-image:url("../img/common/radio_ico.png");background-position:0 0;background-repeat:no-repeat;font-size:0}
+.cm_radio_box.on{background-position:0 -20px}
+.cm_radio_box input[type="radio"]{display:inline-block;position:relative;z-index:10;vertical-align:middle;width:20px;height:20px;opacity:0;filter:alpha(opacity=0)}
+.cm_radio_box label{display:inline-block;vertical-align:middle;color:#000;font-size:14px;margin-left:12px}
+
+.cm_input_box input[type="text"]:focus, .cm_input_box input[type="password"]:focus, .cm_input_box input[type="number"]:focus, .cm_input_box textarea:focus, .cm_select_box select:focus, .cm_input_box input[type="text"].focus, .cm_input_box input[type="password"].focus, .cm_input_box textarea.focus, .cm_select_box.focus{position:relative;z-index:10;border:1px solid #3771c8}
+/* //common classes end */
