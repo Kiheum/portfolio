@@ -30,6 +30,7 @@ body{background-color:#fff}
 .about_list > li .list_ttl:before{display:block;content:"";position:absolute;top:6px;left:0;width:8px;height:8px;background-color:#fff}
 .about_list > li > dl{position:relative;width:100%;padding-left:35%;margin-top:15px;-webkit-box-sizing:border-box;box-sizing:border-box}
 .about_list > li > dl > dt{position:absolute;top:0;left:0;width:35%;color:#fff;font-size:14px;line-height:100%}
+.about_list > li > dl > dd{color:#fff;font-size:14px;line-height:100%}
 .about_list .type, .about_list .date{color:#fff;font-size:12px;line-height:14px}
 .about_list .type{float:left}
 .about_list .date{float:right}
