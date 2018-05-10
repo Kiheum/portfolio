@@ -2,6 +2,15 @@
 
 /* font start */
 @font-face {
+	font-family:'NotoSansKR-Light';
+	font-style:normal;
+	font-weight:300;
+	src:url('../font/NotoSansKR-Light.eot');
+	src:url('../font/NotoSansKR-Light.eot?#iefix') format('embedded-opentype'),
+		url('../font/NotoSansKR-Light.woff') format('woff');
+}
+
+@font-face {
 	font-family:'NotoSansKR-Regular';
 	font-style:normal;
 	font-weight:400;
@@ -28,7 +37,7 @@ strong, em{font-size:inherit;line-height:inherit}
 /* //CSS reset end */
 
 /* common classes start */
-body{font-family:'NotoSansKR-Regular';font-weight:400;color:#000;-webkit-text-size-adjust:none}
+body{font-family:'NotoSansKR-Light';font-weight:300;color:#000;-webkit-text-size-adjust:none}
 #wrapper{overflow:hidden;position:relative;width:100%}
 .clear:after{display:block;clear:both;content:""}
 .indent{display:block;height:0;font-size:0;text-indent:-10000px}
