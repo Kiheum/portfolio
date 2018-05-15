@@ -34,8 +34,11 @@
 		});
 	};
 
-	var visualH = function() {
+	var visual = function() {
 		$('.visual').css('height', $(win).innerHeight());
+		$('.visual_txt_box').css({
+			'marginTop' : - ($('.visual_txt_box').innerHeight() / 2) + ($('#header').innerHeight() / 2)
+		});
 	};
 
 	var viewResize = function() {
@@ -65,12 +68,12 @@
 			mobileInit();
 		}
 		gnb();
-		visualH();
+		visual();
 	});
 
 	$(win).on('resize', function() {
 		viewResize();
-		visualH();
+		visual();
 	});
 
 	$(win).on('scroll', function() {
