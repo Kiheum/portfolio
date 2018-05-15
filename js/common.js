@@ -26,7 +26,7 @@
 
 		$('.btn_gnb_close, .m_gnb_dimm').on('click', function(e) {
 			$('.gnb_nav').animate({
-				'left' : '-320px'
+				'left' : '-100%'
 			}, function() {
 				$('.m_gnb_dimm').hide();
 			});
