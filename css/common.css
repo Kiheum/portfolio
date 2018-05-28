@@ -65,7 +65,9 @@ body{background-color:#fff}
 /* //header end */
 
 /* visual start */
-.visual{position:relative;width:100%;min-height:480px;background-image:url("../img/visual.jpg");background-position:50% 50%;background-size:cover}
+.visual{position:relative;width:100%;min-height:480px;background-position:50% 50%;background-size:cover}
+.visual.about_visual{background-image:url("../img/visual.jpg")}
+.visual.study_visual{background-image:url("../img/visual02.jpg")}
 .visual .inner{height:100%}
 .visual_txt_box{position:absolute;top:50%;-webkit-box-sizing:border-box;box-sizing:border-box}
 .visual_ttl{color:#fff;font-family:'Arial';font-size:60px;line-height:100%;letter-spacing:-0.025em;text-align:center}
@@ -74,13 +76,13 @@ body{background-color:#fff}
 .scroll_down .btn_scroll_down{display:inline-block;padding-right:25px;color:#fff;font-size:12px;background-image:url("../img/btn_scroll_down.png");background-repeat:no-repeat;background-size:14px 12px;background-position:100% 50%}
 
 @media screen and (max-width:1120px) {
-	.visual_txt_box{padding:0 20px}
+	.visual_txt_box{padding-right:20px}
 	.visual_ttl{font-size:36px}
 	.visual_txt{padding-top:25px;font-size:12px}
 }
 
 @media screen and (max-width:640px) {
-	.visual_txt_box{padding:0 12px}
+	.visual_txt_box{padding-right:12px}
 	.visual_ttl{font-size:24px}
 	.visual_txt{padding-top:15px}
 }
@@ -167,7 +169,7 @@ body{background-color:#fff}
 .study_list > li{margin-top:30px}
 .study_list > li:first-child{margin-top:0}
 .study_txt_area{padding-top:15px}
-.study_txt_area > a{display:block;float:left;color:#333;font-size:14px;line-height:100%}
+.study_txt_area > a{display:block;float:left;color:#3b8dbd;font-size:14px;line-height:100%}
 .study_txt_area > .study_date{float:right;color:#333;font-size:12px;line-height:14px}
 
 @media screen and (max-width:1120px) {

@@ -69,7 +69,7 @@
 		}
 		$('.btn_scroll_down').on('click', function(e) {
 			$('html, body').animate({
-				scrollTop : $('.about').offset().top
+				scrollTop : $('.about, .study').offset().top
 			}, 500, 'swing');
 			e.preventDefault();
 		});
