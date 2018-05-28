@@ -37,7 +37,7 @@
 	var visual = function() {
 		$('.visual').css('height', $(win).innerHeight());
 		$('.visual_txt_box').css({
-			'marginTop' : - ($('.visual_txt_box').innerHeight() / 2) + ($('#header').innerHeight() / 2)
+			'marginTop' : - ($('.visual_txt_box').innerHeight() / 2)
 		});
 	};
 
@@ -67,6 +67,12 @@
 		} else if (winWidth <= 960) {
 			mobileInit();
 		}
+		$('.btn_scroll_down').on('click', function(e) {
+			$('html, body').animate({
+				scrollTop : $('.about').offset().top
+			}, 500, 'swing');
+			e.preventDefault();
+		});
 		gnb();
 		visual();
 	});
